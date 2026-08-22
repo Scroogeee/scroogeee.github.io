@@ -1,0 +1,33 @@
+<script>
+    // add the language switcher
+    const langs = { "en-us": "🇺🇸 English", "de-de": "🇩🇪 Deutsch" };
+    const path = window.location.pathname;
+    const current = Object.keys(langs).find(l => path.includes(`/content/${l}/`));
+    if (current) {
+        const languagePath = `/content/${current}/index.html`;
+        const siteRoot = path.substring(
+            0,
+            path.indexOf(`/content/${current}/`)
+        );
+        const logo = document.querySelector(".navbar-brand");
+        if (logo) {
+            logo.href = `${siteRoot}${languagePath}`;
+        }
+    }
+
+    // build the navbar
+    const nav = document.querySelector(".navbar-nav.navbar-nav-scroll.ms-auto")
+        || document.querySelector(".navbar-nav");
+    if (nav) {
+        const li = document.createElement("li");
+        li.className = "nav-item dropdown";
+        li.innerHTML = `
+    <a class="nav-link dropdown-toggle languages-button" href="#" role="button" data-bs-toggle="dropdown"><i class="bi bi-translate"></i></a>
+    <ul class="dropdown-menu dropdown-menu-end" id="languages-links">
+      ${Object.entries(langs).map(([code, label]) => `
+        <li><a class="dropdown-item${code === current ? " active" : ""}"
+               href="${path.replace(`/content/${current}/`, `/content/${code}/`)}">${label}</a></li>`).join("")}
+    </ul>`;
+        nav.appendChild(li);
+    }
+</script>

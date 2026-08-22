@@ -1,0 +1,115 @@
+/*-- scss:defaults --*/
+$body-bg: #121212;
+$body-color: #e0e0e0;
+$link-color: #e0e0e0;
+$link-hover-color: #ffffff;
+
+$primary: #b3b3b3;
+$secondary: #808080;
+
+$navbar-bg: #1e1e1e;
+$navbar-fg: #e0e0e0;
+$navbar-hl: #ffffff;
+$navbar-border: #343a40;
+
+$sidebar-bg: #1a1a1a;
+$sidebar-fg: #e0e0e0;
+$sidebar-hl: #ffffff;
+
+$footer-bg: #1e1e1e;
+$footer-fg: #b3b3b3;
+
+$lang-btn-bg: #2a2a2a;
+$lang-btn-fg: #f2f2f2;
+$lang-btn-border: #3a3a3a;
+$lang-btn-hover-bg: #343434;
+$lang-btn-hover-fg: #ffffff;
+
+$lang-menu-hover-bg: #2a2a2a;
+$lang-menu-hover-fg: #f2f2f2;
+$lang-menu-active-bg: #343434;
+$lang-menu-active-fg: #ffffff;
+$toc-guide-inactive: #2f2f2f;
+$toc-guide-active: #ffffff;
+
+$lang-btn-offset-y: 0.25rem;
+
+$code-bg: #0b0b0b;
+$code-border: #2a2a2a;
+$code-color: #f0f0f0;
+$inline-code-bg: #242424;
+
+
+/*-- scss:rules --*/
+.navbar {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $navbar-border;
+}
+
+.navbar-nav .nav-link:hover,
+.sidebar-item a:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+.sidebar-item.active>.sidebar-item-container .sidebar-item-text {
+  font-weight: bold;
+}
+
+.navbar .navbar-brand {
+  margin-top: 0.15rem;
+}
+
+html[data-bs-theme="dark"] .navbar #languages-links .dropdown-item:hover,
+html[data-bs-theme="dark"] .navbar #languages-links .dropdown-item:focus,
+body.quarto-dark .navbar #languages-links .dropdown-item:hover,
+body.quarto-dark .navbar #languages-links .dropdown-item:focus {
+  background-color: $lang-menu-hover-bg;
+  color: $lang-menu-hover-fg;
+}
+
+html[data-bs-theme="dark"] .navbar #languages-links .dropdown-item.active,
+html[data-bs-theme="dark"] .navbar #languages-links .dropdown-item:active,
+body.quarto-dark .navbar #languages-links .dropdown-item.active,
+body.quarto-dark .navbar #languages-links .dropdown-item:active {
+  background-color: $lang-menu-active-bg;
+  color: $lang-menu-active-fg;
+}
+
+/* Right TOC guide bar contrast in dark mode. */
+.sidebar nav[role="doc-toc"] a,
+#TOC a {
+  border-left: 2px solid $toc-guide-inactive;
+}
+
+.sidebar nav[role="doc-toc"] a.active,
+.sidebar nav[role="doc-toc"] .active>a,
+#TOC a.active,
+#TOC .active>a {
+  border-left-color: $toc-guide-active;
+}
+
+#quarto-back-to-top {
+  font-weight: bold;
+  box-shadow: none;
+  border-width: 1px;
+  border-style: solid;
+  background-color: $navbar-bg;
+  color: $body-color;
+}
+
+pre,
+div.sourceCode,
+pre.sourceCode {
+  background-color: $code-bg;
+  border: 1px solid $code-border;
+  border-radius: 6px;
+}
+
+#mermaid-1 .edgeLabel p {
+  background-color: var(--mermaid-label-bg-color) !important;
+}

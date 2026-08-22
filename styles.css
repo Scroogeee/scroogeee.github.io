@@ -1,0 +1,17 @@
+/* Ensure selected entries are bold in both sidebars. */
+.sidebar-item.active > .sidebar-item-container .sidebar-item-text,
+.sidebar-item .sidebar-link.active,
+.sidebar nav[role="doc-toc"] a.active,
+.sidebar nav[role="doc-toc"] .active > a,
+#TOC .active,
+#TOC .active > a {
+	font-weight: bold;
+}
+
+.navbar-title{
+  font-weight: bold;
+}
+
+#quarto-back-to-top {
+  left: 90%;
+}

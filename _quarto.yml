@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: "Scroogeee.github.io"
+  site-url: "https://scroogeee.github.io/"
+  back-to-top-navigation: true
+  page-navigation: true
+  navbar:
+    right:
+      - icon: github
+        href: https://github.com/Scroogeee
+        aria-label: GitHub
+  page-footer:
+    left: "made with [quarto](https://quarto.org/)"
+    center: |
+      <span style="font-style: italic; font-size: 0.85em;">{{< meta date-modified >}}</span>
+  sidebar:
+    collapse-level: 3
+
+format:
+  html:
+    respect-user-color-scheme: true
+    theme:
+      light: [cosmo, theme-light.scss]
+      dark: [cosmo, theme-dark.scss]
+    css: styles.css
+    toc: true
+    date-modified: last-modified
+    title-block-style: none
+    date-format: "DD.MM.YYYY; HH:mm"
+    include-after-body: switch-language.html
+
+
+profile:
+  group: [[en-us]]

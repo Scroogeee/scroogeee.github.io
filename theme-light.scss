@@ -1,0 +1,81 @@
+/*-- scss:defaults --*/
+$body-bg: #ffffff;
+$body-color: #1a1a1a;
+$link-color: #1a1a1a;
+$link-hover-color: #000000;
+
+$primary: #4d4d4d;
+$secondary: #808080;
+
+$navbar-bg: #f2f2f2;
+$navbar-fg: #1a1a1a;
+$navbar-hl: #000000;
+$navbar-border: #343a40;
+
+$sidebar-bg: #f7f7f7;
+$sidebar-fg: #1a1a1a;
+$sidebar-hl: #000000;
+
+$footer-bg: #f2f2f2;
+$footer-fg: #4d4d4d;
+
+$lang-btn-bg: $navbar-bg;
+$lang-btn-fg: #1a1a1a;
+$lang-btn-border: #d8d8d8;
+$lang-btn-hover-bg: #ebebeb;
+$lang-btn-hover-fg: #1a1a1a;
+$lang-btn-offset-y: 0.25rem;
+
+/*-- scss:rules --*/
+.navbar {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $navbar-border;
+}
+
+.navbar-nav .nav-link:hover,
+.sidebar-item a:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+.sidebar-item.active>.sidebar-item-container .sidebar-item-text {
+  font-weight: bold;
+}
+
+.navbar .navbar-brand {
+  margin-top: 0.15rem;
+}
+
+/* Theme-aligned navbar language dropdown button with subtle contrast.
+html[data-bs-theme="light"] .navbar .languages-button.btn,
+body.quarto-light .navbar .languages-button.btn {
+  background-color: $lang-btn-bg;
+  color: $lang-btn-fg;
+  border: 1px solid $lang-btn-border;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.6rem;
+  margin-top: $lang-btn-offset-y;
+}
+
+html[data-bs-theme="light"] .navbar .languages-button.btn:hover,
+html[data-bs-theme="light"] .navbar .languages-button.btn:focus,
+html[data-bs-theme="light"] .navbar .show>.languages-button.btn,
+body.quarto-light .navbar .languages-button.btn:hover,
+body.quarto-light .navbar .languages-button.btn:focus,
+body.quarto-light .navbar .show>.languages-button.btn {
+  background-color: $lang-btn-hover-bg;
+  color: $lang-btn-hover-fg;
+}*/
+
+#quarto-back-to-top {
+  box-shadow: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $secondary;
+  background-color: $body-bg;
+  color: $body-color;
+}
