@@ -1,0 +1,5 @@
+---
+title: "404"
+---
+
+Go [here](https://scroogeee.github.io) instead.

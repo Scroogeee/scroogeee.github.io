@@ -1,0 +1,11 @@
+website:
+  navbar:
+    left:
+      - href: content/en-us/index.qmd
+        text: Homepage
+      - href: content/en-us/about.qmd
+        text: About
+
+format:
+  html:
+    date-format: "[Last updated:] YYYY-MM-DD [at] HH:mm"
