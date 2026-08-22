@@ -8,7 +8,7 @@ clean:
 render:
 	quarto render content --profile en-us
 # add other languages here
-	echo '<meta http-equiv="refresh" content="0; url=content/en-us/index.html">' > _site/index.html
+	echo '<meta http-equiv="refresh" content="0; url=content/en-us/">' > _site/index.html
 	cp setup/.htaccess _site
 
 preview:
