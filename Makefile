@@ -17,3 +17,6 @@ preview:
 serve: clean render
 	echo "serving at http://localhost:8000"
 	cd _site && python3 -m http.server 8000
+
+deploy: clean render
+	git push github main:gh-pages
