@@ -6,8 +6,8 @@ clean:
 	rm -rf _site
 
 render:
-	cp ./setup/.htaccess _site
-	quarto render content/en-us --profile en-us
+	cp ./setup/.htaccess _site/
+	quarto render content --profile en-us
 # add other languages here
 	echo '<meta http-equiv="refresh" content="0; url=content/en-us/index.html">' > _site/index.html
 

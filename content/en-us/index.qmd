@@ -3,3 +3,8 @@ title: "Home, sweet home"
 ---
 
 Under construction.
+
+## Public github projects
+- [Code for FIRST Relic Recovery](https://scroogeee.github.io/Ftc2017-18/) (FIRST Tech Challenge season 2017/18)
+- some scripts testing the [OpenComputers](https://scroogeee.github.io/OC-scripts/) minecraft mod
+- a transcription of the [MineKart 2.0](https://gist.github.com/Scroogeee/e7e6c0eab7ba5bd2c257f548c13382fe) engine presented [here](https://www.youtube.com/watch?v=QQh8Ay8u4Rc)
