@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "content/en-us/about.html",
+    "href": "content/en-us/about.html",
+    "title": "About",
+    "section": "",
+    "text": "This website is managed by Scroogeee.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "content/404.html",
+    "href": "content/404.html",
+    "title": "404",
+    "section": "",
+    "text": "Go here instead.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "content/en-us/index.html",
+    "href": "content/en-us/index.html",
+    "title": "Home, sweet home",
+    "section": "",
+    "text": "Under construction."
+  },
+  {
+    "objectID": "content/en-us/index.html#public-github-projects",
+    "href": "content/en-us/index.html#public-github-projects",
+    "title": "Home, sweet home",
+    "section": "Public github projects",
+    "text": "Public github projects\n\nCode for FIRST Relic Recovery (FIRST Tech Challenge season 2017/18)\nsome scripts testing the OpenComputers minecraft mod\na transcription of the MineKart 2.0 engine presented here"
+  }
+]
